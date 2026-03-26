@@ -202,7 +202,8 @@ export default function Home() {
       <section className="flex flex-col md:flex-row items-center max-w-6xl mx-auto my-24 px-6 gap-12">
         <img src="/images/foundation.jpg" alt="STEMgage Foundation" className="w-full md:w-1/2 rounded-lg shadow-lg"/>
         <p className="text-lg md:w-1/2">
-          STEMgage is a foundation dedicated to inspiring and empowering students in STEM fields. 
+           At STEMgage, we started our mission based on a foundation of hands-on learning. Too often, we noticed kids and students spending all of their time learning only through pen and paper, and ignoring the entire world of possibilities that they could gain from applying that knowledge to the real world. STEMgage aims to bridge this gap between theory and reality and offer kids a chance to see how what they are learning applies to their life. 
+STEMgage accomplishes this through hosting in-person activities at libraries, where, after a short presentation explaining a project along with the science and math with it, attendees have a set amount of time to complete the challenge while competing with each other to achieve the best score. Right now we work with libraries to bring our projects to kids, but we hope to expand into other fields in the future
         </p>
       </section>
       <section className="bg-gray-50 py-24 text-center px-6">
