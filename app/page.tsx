@@ -1,8 +1,11 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
 import TabNavi from "./tabnavi";
+import App from "next/app";
+
 
 export default function Home() {
+
   const [activeTab, setActiveTab] = useState(0);
   const [scrollY, setScrollY] = useState(0);
   const [isContentFading, setIsContentFading] = useState(false);
@@ -161,12 +164,12 @@ export default function Home() {
   const podiumBarHeight = (score: number) => Math.max(80, (score / maxPodiumScore) * 260);
 
   const portfolioImages = [
-    "https://via.placeholder.com/360x216.png?text=Portfolio+1",
-    "https://via.placeholder.com/360x216.png?text=Portfolio+2",
-    "https://via.placeholder.com/360x216.png?text=Portfolio+3",
-    "https://via.placeholder.com/360x216.png?text=Portfolio+4",
-    "https://via.placeholder.com/360x216.png?text=Portfolio+5",
-    "https://via.placeholder.com/360x216.png?text=Portfolio+6"
+    "/images/portfolio1test.jpg",
+    "/images/portfolio2test.jpg",
+    "/images/portfolio3test.jpg",
+    "/images/portfolio4test.jpg",
+    "/images/portfolio5test.jpg",
+    "/images/portfolio6test.jpg"
   ];
 
   const upcomingEvents = [
