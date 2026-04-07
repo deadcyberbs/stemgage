@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
       <head>
-        {/* This small script/style prevents the "all black" screen while Tailwind loads */}
+        {/* Forces the background to be white immediately to avoid the black screen issue */}
         <style>{`
           body { 
             background-color: white !important; 
@@ -36,15 +36,18 @@ export default function RootLayout({
         `}</style>
       </head>
       <body className="min-h-full flex flex-col bg-white text-gray-900">
-        {/* Navigation bar at the top of every page */}
+        {/* This stays at the top of every page */}
         <Navigation />
 
-        {/* This is where the content for each individual page will render */}
-        <main className="flex-grow">
+        {/* This 'children' prop is the magic. 
+            When you go to /portfolio, the code from portfolio/page.tsx 
+            gets injected right here. 
+        */}
+        <main className="flex-grow bg-white">
           {children}
         </main>
 
-        {/* The footer with the divider and social logos at the bottom */}
+        {/* This stays at the bottom of every page */}
         <Footer />
       </body>
     </html>
